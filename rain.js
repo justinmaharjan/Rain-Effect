@@ -7,7 +7,7 @@ canvas.height = window.innerHeight;
 const numDrops = 100;
 const drops = [];
 
-for (let i = 0; i<numDrops; i++) {
+for (let i = 0; i < numDrops; i++) {
   drops.push({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
@@ -18,7 +18,7 @@ for (let i = 0; i<numDrops; i++) {
 
 function drawRain() {
   c.clearRect(0, 0, canvas.width, canvas.height);
-  
+
   drops.forEach((drop) => {
     c.beginPath();
     c.moveTo(drop.x, drop.y);
@@ -36,6 +36,7 @@ function drawRain() {
   });
 
   requestAnimationFrame(drawRain);
-}.0
+}
+0.0;
 
 drawRain();
